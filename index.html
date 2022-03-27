@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypergram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="canvas_class">
+        <canvas id="canvas_id" class="canvas_cl">
+        </canvas>
+    </div>
+    <div class="form">
+        <form action="">
+            <input type="file" id="file-input" accept="image/*">
+
+            <label for="brightness">Brightness</label>
+            <input type="range" id="brightness" min="-255" max="255" step="1" value="0">
+
+            <label for="contrast">Contrast</label>
+            <input type="range" id="contrast" min="-128" max="128" step="1" value="0">
+
+            <label for="transparent">Transparent</label>
+            <input type="range" id="transparent" min="0" max="1" step="0.1" value="1">
+
+            <button id="save-button">SAVE IMAGE</button>
+        </form>
+
+    </div>
+</div>
+<p id="brightness_value">Brightness</p>
+<p id="contrast_value">Contrast</p>
+<p id="transparent_value">Transparent</p>
+<script src="script.js"></script>
+</body>
+</html>
